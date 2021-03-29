@@ -11,11 +11,11 @@ camera = document.getElementById("camera");
 
 function take_snapshot()
 {
-    Webcam.snap(function(data_uri) {
-        document.getElementById("result").innerHTML = '<img id="selfie_image" src="'+data_uri+'"/>';
-    });
-}
-
+      Webcam.snap(function(data_uri)
+                  {
+            documaent.getElamentById("result").innerHTML = '<img id="selfie_image" src=" '+data_uri+' "/> ;
+      });
+            
   console.log('ml5 version:', ml5.version);
   
   // Initialize the Image Classifier method with MobileNet
