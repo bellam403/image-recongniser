@@ -32,7 +32,8 @@ classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models
     img = document.getElementById('selfie_image');
     classifier.classify(img, gotResult);
   }
-
+      
+      
 
 // A function to run when we get any errors and the results
 function gotResult(error, results) {
@@ -46,3 +47,6 @@ function gotResult(error, results) {
     document.getElementById("result_object_accuracy").innerHTML = results[0].confidence.toFixed(3);
   }
 }
+
+      
+   
